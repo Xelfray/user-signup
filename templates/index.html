@@ -5,17 +5,17 @@
 
 <form method="post">
     <label>Username
-        <input type="text" name="username">{{username}}</input>
-    </label>
+        <input type="text" name="username" value="{{username}}" />
+    </label><span class="error">{{error_name}}</span><br />
     <label>Password
-        <input type="password" name="password_top">{{password_top}}</input>
-    </label>
+        <input type="password" name="password_top" />
+    </label><span class="error">{{error_password}}</span><br />
     <label>Verify Password
-        <input type="password" name="password_bot">{{password_bot}}</input>
-    </label>
-    <label>
-        <input type="text" name="email">{{email}}</input>
-    </label>
+        <input type="password" name="password_bot" />
+    </label><span class="error">{{error_password}}</span><br />
+    <label>Email(optional)
+        <input type="text" name="email" value="{{email}}"/>
+    </label><span class="error">{{error_email}}</span><br />
     <input type="submit" value="Submit" />
 </form>
 
